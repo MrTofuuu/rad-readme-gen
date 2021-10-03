@@ -28,28 +28,37 @@ function generateMarkdown(data) {
     return `# ${data.title}
 
 ## Description
-
+${data.description}
 ## Table of Contents
-- [Installation] (#installation)
-- [Usage] (#usage)
-- [License] (#license)
-- [Contributing] (#contributing)
-- [Tests] (#tests)
-- [Questions] (#questions)
+- [Installation](#installation)
+- [Usage](#usage)
+- [License](#license)
+- [Contributing](#contributing)
+- [Tests](#tests)
+- [Questions](#questions)
 
 ## Installation
+${data.installation}
 
 ## Usage
+${data.usage}
 
 ## License
+${data.license ? data.licenseType : ''}
 
 ## Contributing
+${data.contributing}
 
 ## Tests
+${data.tests}
 
 ## Questions
 
 If you have any questions please reach out here
+
+Email: [${data.email}](mailto:${data.email})
+
+GitHub: [${data.github}'s GitHub](https://www.github.com/${data.github})
 `;
 }
 

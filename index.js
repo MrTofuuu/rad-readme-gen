@@ -2,7 +2,8 @@
 // importing inquirer and fs 
 const inquirer = require('inquirer');
 const fs = require('fs');
-const gm = require('./utils/generateMarkdown');
+const gerateM = require('./utils/generateMarkdown');
+const generateMarkdown = require('./utils/generateMarkdown');
 
 // TODO: Create an array of questions for user input
 const questions = {
@@ -14,7 +15,7 @@ const questions = {
 
     usage: 'Please provide any usage instructions you have for the end user.',
 
-    license: 'Which license would you like to include in the readme?',
+    license: 'Do you want to include a license in this project?',
 
     contributing: 'Please enter any contribution guidelines you have for the project.',
 
@@ -29,47 +30,55 @@ const promptUser = () => {
     return inquirer.prompt([{
             type: 'input',
             name: 'title',
-            message: questions.title,
+            message: questions.title
         },
         {
             type: 'input',
             name: 'description',
-            message: questions.description,
+            message: questions.description
         },
         {
             type: 'input',
             name: 'installation',
-            message: questions.installation,
+            message: questions.installation
         },
         {
             type: 'input',
             name: 'usage',
-            message: questions.usage,
+            message: questions.usage
         },
         {
-            type: 'input',
+            type: 'confirm',
             name: 'license',
             message: questions.license,
+            default: false
+        },
+        {
+            type: 'list',
+            name: 'licenseType',
+            message: 'Which license would you like to use?',
+            choices: ['MIT', 'Apache 2.0', 'GNU General Public License v3.0'],
+            when: (answers) => answers.license
         },
         {
             type: 'input',
             name: 'contributing',
-            message: questions.contributing,
+            message: questions.contributing
         },
         {
             type: 'input',
             name: 'tests',
-            message: questions.tests,
+            message: questions.tests
         },
         {
             type: 'input',
             name: 'email',
-            message: questions.email,
+            message: questions.email
         },
         {
             type: 'input',
             name: 'github',
-            message: questions.github,
+            message: questions.github
         }
     ]);
 };
@@ -81,7 +90,7 @@ function writeToFile(fileName, data) {}
 const init = () => {
     promptUser()
         // Use writeFileSync method to use promises instead of a callback function
-        .then((answers) => fs.writeFileSync('readme.md', gm.generateMarkdown(answers)))
+        .then((answers) => fs.writeFileSync('./output/readme.md', generateMarkdown(answers)))
         .then(() => console.log('Successfully wrote to readme.md'))
         .catch((err) => console.error(err));
 };
