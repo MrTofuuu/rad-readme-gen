@@ -26,6 +26,7 @@ const questions = {
     github: 'What is your GitHub Id?'
 };
 
+// prompt array that 
 const promptUser = () => {
     return inquirer.prompt([{
             type: 'input',
@@ -54,6 +55,7 @@ const promptUser = () => {
             default: false
         },
         {
+            // This question is only asked when the license question is selected as yes
             type: 'list',
             name: 'licenseType',
             message: 'Which license would you like to use?',
