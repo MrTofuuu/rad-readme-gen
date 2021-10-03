@@ -1,6 +1,6 @@
 # rad-readme-gen
 
-# **Weather Forecast**
+# **ReadMe Generator**
 
 Welcome to my ridiculously radiacal readme generator!
 
@@ -10,6 +10,7 @@ Welcome to my ridiculously radiacal readme generator!
 Typing up a readme for every single application you build can become a little tedious and boring. This readme will help by creating the readme for you by using Node.js!
 
 ### **Tasks completed**
+
 Created a readme generator using node.js and inquirer.
 
 
@@ -56,9 +57,6 @@ npm install inquirer
 node index.js
 ```
 
-
-
-
 ## Screenshots and Video Link of application
 
 ![Ridiculously Radical Readme Generator](#)
@@ -83,6 +81,3 @@ Chris Stallcup
 [![GitHub open issues](https://img.shields.io/github/issues/MrTofuuu/rad-readme-gen?style=for-the-badge)](https://github.com/MrTofuuu/rad-readme-gen/issues)
 [![GitHub closed issues](https://img.shields.io/github/issues-closed/MrTofuuu/rad-readme-gen?style=for-the-badge)](https://img.shields.io/github/issues-closed/MrTofuuu/rad-readme-gen?style=for-the-badge)
 [![GitHub stars](https://img.shields.io/github/stars/MrTofuuu/rad-readme-gen?style=for-the-badge)](https://github.com/MrTofuuu/rad-readme-gen/stargazers)
-
-
-
