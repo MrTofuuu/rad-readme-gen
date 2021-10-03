@@ -2,10 +2,10 @@
 // importing inquirer and fs 
 const inquirer = require('inquirer');
 const fs = require('fs');
-const gerateM = require('./utils/generateMarkdown');
 const generateMarkdown = require('./utils/generateMarkdown');
 
 // TODO: Create an array of questions for user input
+// I didn't like the array approach, so i moved to object instead
 const questions = {
     title: 'What is the title of your project?',
 
@@ -86,7 +86,9 @@ const promptUser = () => {
 };
 // TODO: Create a function to write README file
 // const writeToFile = (fileName, data) => {}
-function writeToFile(fileName, data) {}
+function writeToFile(fileName, data) {
+    fs.writeFileSync('./output/readme.md', generateMarkdown(answers));
+}
 
 // TODO: Create a function to initialize app
 const init = () => {

@@ -75,6 +75,7 @@ Chris Stallcup
 * [https://www.markdownguide.org/basic-syntax/](https://www.markdownguide.org/basic-syntax/)
 * [https://coding-boot-camp.github.io/full-stack/github/professional-readme-guide](https://coding-boot-camp.github.io/full-stack/github/professional-readme-guide)
 * [https://betterprogramming.pub/add-badges-to-a-github-repository-716d2988dc6a](https://betterprogramming.pub/add-badges-to-a-github-repository-716d2988dc6a)
+* [How to use Inquirer](https://www.npmjs.com/package/inquirer)
 
 ## Badges
 
