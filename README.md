@@ -76,6 +76,9 @@ Chris Stallcup
 * [https://coding-boot-camp.github.io/full-stack/github/professional-readme-guide](https://coding-boot-camp.github.io/full-stack/github/professional-readme-guide)
 * [https://betterprogramming.pub/add-badges-to-a-github-repository-716d2988dc6a](https://betterprogramming.pub/add-badges-to-a-github-repository-716d2988dc6a)
 * [How to use Inquirer](https://www.npmjs.com/package/inquirer)
+* [How to use Switch statements](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/switch)
+* [How to use when condition in inquirer](https://stackoverflow.com/questions/56412516/conditional-prompt-rendering-in-inquirer)
+* [How to use ternary operartor](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Conditional_Operator)
 
 ## Badges
 
