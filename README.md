@@ -82,4 +82,4 @@ Chris Stallcup
 [![GitHub open issues](https://img.shields.io/github/issues/MrTofuuu/rad-readme-gen?style=for-the-badge)](https://github.com/MrTofuuu/rad-readme-gen/issues)
 [![GitHub closed issues](https://img.shields.io/github/issues-closed/MrTofuuu/rad-readme-gen?style=for-the-badge)](https://img.shields.io/github/issues-closed/MrTofuuu/rad-readme-gen?style=for-the-badge)
 [![GitHub stars](https://img.shields.io/github/stars/MrTofuuu/rad-readme-gen?style=for-the-badge)](https://github.com/MrTofuuu/rad-readme-gen/stargazers)
-[![GitHub license](https://img.shields.io/github/license/mrtofuuu/rad-readme-gen?style=for-the-badge)](./LICENSE.MD)
+[![GitHub license](https://img.shields.io/github/license/mrtofuuu/rad-readme-gen?style=for-the-badge)](./LICENSE.md)
