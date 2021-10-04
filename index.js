@@ -94,8 +94,8 @@ function writeToFile(fileName, data) {
 const init = () => {
     promptUser()
         // Use writeFileSync method to use promises instead of a callback function
-        .then((answers) => fs.writeFileSync('./output/readme.md', generateMarkdown(answers)))
-        .then(() => console.log('Successfully wrote to readme.md'))
+        .then((answers) => fs.writeFileSync('./output/README.MD', generateMarkdown(answers)))
+        .then(() => console.log('Successfully wrote to README.MD'))
         .catch((err) => console.error(err));
 };
 
