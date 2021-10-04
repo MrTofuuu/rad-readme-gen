@@ -2,7 +2,7 @@
 // If there is no license, return an empty string
 function renderLicenseBadge(license) {
     if (!license) {
-        return;
+        return '';
     }
 }
 
@@ -10,8 +10,9 @@ function renderLicenseBadge(license) {
 // If there is no license, return an empty string
 function renderLicenseLink(license) {
     if (!license) {
-        return;
+        return '';
     }
+    return `- [License](#license)`;
 }
 
 
@@ -19,8 +20,12 @@ function renderLicenseLink(license) {
 // If there is no license, return an empty string
 function renderLicenseSection(license) {
     if (!license) {
-        return;
+        return '';
     }
+    return `## License
+
+${renderLicenseLink(license)}
+`;
 }
 
 // TODO: Create a function to generate markdown for README
@@ -29,21 +34,22 @@ function generateMarkdown(data) {
 
 ## Description
 ${data.description}
+
 ## Table of Contents
+
 - [Installation](#installation)
 - [Usage](#usage)
-- [License](#license)
 - [Contributing](#contributing)
 - [Tests](#tests)
 - [Questions](#questions)
-
+${data.license ? renderLicenseLink(): ''}
 ## Installation
 ${data.installation}
 
 ## Usage
 ${data.usage}
 
-## License
+${data.license ? renderLicenseSection(data.licenseType) : ''}
 ${data.license ? data.licenseType : ''}
 
 ## Contributing
