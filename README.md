@@ -59,8 +59,7 @@ node index.js
 
 ## Screenshots and Video Link of application
 
-![Ridiculously Radical Readme Generator](#)
-
+[Ridiculously Radical Readme Generator](https://drive.google.com/file/d/1N_N1Q_u7RCARwe3XeK8R_wD8nAlaHnD6/view?usp=sharing)
 
 ### **Links**
 
